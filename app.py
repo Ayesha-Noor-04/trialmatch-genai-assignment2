@@ -97,6 +97,66 @@ def prepare_note(raw_note):
     return numbered_note, sentences
 
 
+_RETRIEVAL_STOP = {
+    "a", "an", "and", "are", "as", "at", "be", "been", "by", "for",
+    "from", "has", "have", "in", "is", "it", "of", "on", "or", "that",
+    "the", "their", "this", "to", "was", "were", "with", "within",
+    "patient", "patients", "history", "documented", "known", "current",
+    "greater", "less", "more", "than", "level", "status", "presence",
+    "active", "severe", "last", "years", "year", "months", "month",
+}
+
+_RETRIEVAL_SYNONYMS = {
+    "renal": {"kidney", "creatinine"},
+    "kidney": {"renal", "creatinine"},
+    "creatinine": {"renal", "kidney"},
+    "myocardial": {"cardiac", "heart"},
+    "infarction": {"mi", "attack"},
+    "cardiac": {"heart", "myocardial"},
+    "hiv": {"immunodeficiency"},
+    "malignancy": {"cancer", "tumour", "tumor", "neoplasm"},
+    "cancer": {"malignancy", "tumour", "tumor", "neoplasm"},
+    "hemoglobin": {"haemoglobin", "hb"},
+    "haemoglobin": {"hemoglobin", "hb"},
+    "diabetes": {"diabetic", "metformin", "glucose"},
+    "hypertension": {"blood", "pressure", "lisinopril"},
+    "ecog": {"performance"},
+}
+
+
+def _retrieval_tokens(text):
+    words = {
+        word
+        for word in re.findall(r"[a-z0-9]+", text.lower())
+        if word not in _RETRIEVAL_STOP and len(word) > 1
+    }
+    expanded = set(words)
+    for word in words:
+        expanded.update(_RETRIEVAL_SYNONYMS.get(word, set()))
+    return expanded
+
+
+def review_hint_sentences(criterion, sentences, top_k=1):
+    """Closest note sentences by keyword overlap. Used only when the model cites none."""
+    criterion_tokens = _retrieval_tokens(criterion)
+    if not criterion_tokens:
+        return []
+
+    scored = []
+    for sentence_id, sentence in enumerate(sentences):
+        overlap = criterion_tokens & _retrieval_tokens(sentence)
+        score = len(overlap) / len(criterion_tokens)
+        scored.append((score, len(overlap), sentence_id))
+
+    # Always return at least one original sentence ID, even when the model
+    # cites none. The UI labels these as review hints, not model evidence.
+    scored.sort(key=lambda item: (-item[0], -item[1], item[2]))
+    return [
+        {"id": sentence_id, "text": sentences[sentence_id]}
+        for _, _, sentence_id in scored[:top_k]
+    ]
+
+
 def predict(tokenizer, model, device, note, sentences, criterion, criterion_type):
     messages = build_messages(note, criterion_type, criterion)
 
@@ -144,6 +204,11 @@ def predict(tokenizer, model, device, note, sentences, criterion, criterion_type
         {"id": i, "text": sentences[i]}
         for i in result["evidence_ids"]
     ]
+    result["review_evidence"] = (
+        []
+        if result["evidence"]
+        else review_hint_sentences(criterion, sentences)
+    )
 
     return result
 
@@ -262,9 +327,21 @@ def create_pdf(patient_note, model_name, results):
                 ))
         else:
             story.append(Paragraph(
-                "No supporting sentence IDs returned.",
+                "The model did not cite a supporting sentence for this label.",
                 styles["SmallNote"]
             ))
+            if result.get("review_evidence"):
+                story.append(Paragraph(
+                    "Closest sentences for manual review (keyword retrieval, "
+                    "not model-cited evidence):",
+                    styles["SmallNote"]
+                ))
+                for evidence in result["review_evidence"]:
+                    story.append(Paragraph(
+                        f"Sentence {evidence['id']}: "
+                        f"{html.escape(evidence['text'])}",
+                        styles["SmallNote"]
+                    ))
 
         if result["label"] is None:
             story.append(Paragraph(
@@ -445,7 +522,21 @@ with screen_tab:
                             f"{evidence['text']}"
                         )
                 else:
-                    st.info("No supporting sentence IDs returned.")
+                    st.warning(
+                        "The model did not cite a supporting sentence for "
+                        "this label."
+                    )
+
+                    if result.get("review_evidence"):
+                        st.caption(
+                            "Closest sentences for manual review (keyword "
+                            "retrieval, not model-cited evidence):"
+                        )
+                        for evidence in result["review_evidence"]:
+                            st.markdown(
+                                f"- **Sentence {evidence['id']}:** "
+                                f"{evidence['text']}"
+                            )
 
                 if result["label"] is None:
                     st.warning(
@@ -484,6 +575,12 @@ with screen_tab:
                 "evidence_ids": result["evidence_ids"],
                 "evidence_text": " | ".join(
                     e["text"] for e in result["evidence"]
+                ),
+                "review_hint_ids": [
+                    e["id"] for e in result.get("review_evidence", [])
+                ],
+                "review_hint_text": " | ".join(
+                    e["text"] for e in result.get("review_evidence", [])
                 ),
                 "valid_json": result["valid_json"]
             })

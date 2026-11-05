@@ -121,3 +121,33 @@ All 14 tests currently pass.
 ## AI-Use Acknowledgement
 
 Code and research notes were drafted with AI assistance under the student's supervision. All submitted code, experiments, and results were reviewed and tested by the student, who is responsible for understanding and explaining the implementation.
+
+## Sample Patient Record
+
+Patient: 58-year-old male.
+
+Medical history: Type 2 diabetes mellitus diagnosed 8 years ago, currently managed with metformin 1000 mg twice daily. History of hypertension, controlled with lisinopril 10 mg daily.
+
+Current clinical status: ECOG performance status of 1. Patient is ambulatory and capable of light physical activity. Recent laboratory results show hemoglobin 12.8 g/dL, platelet count 180,000/µL, and serum creatinine 1.0 mg/dL.
+
+Cardiovascular history: No documented history of myocardial infarction, stroke, or congestive heart failure.
+
+Surgical history: Appendectomy approximately 15 years ago.
+
+Allergies: No known drug allergies.
+
+Social history: Former smoker, quit 10 years ago. No current alcohol use.
+
+Additional information: No documented active malignancy. HIV and hepatitis status are not available in the medical record.
+
+## Inclusion Criteria
+Age greater than 18 years
+Diagnosis of type 2 diabetes mellitus
+ECOG performance status of 0 or 1
+Hemoglobin level greater than 10 g/dL
+
+## Exclusion Criteria
+History of myocardial infarction within the last 6 months
+Presence of congestive heart failure
+Active HIV infection
+Severe renal impairment
