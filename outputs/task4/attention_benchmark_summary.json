@@ -1,0 +1,19 @@
+{
+  "device": "Tesla T4",
+  "dtype": "float32",
+  "batch_size": 1,
+  "heads": 4,
+  "head_dimension": 64,
+  "causal_mask": true,
+  "sequence_lengths": [
+    128,
+    256,
+    512
+  ],
+  "repeats": 3,
+  "tolerance": {
+    "atol": 1e-05,
+    "rtol": 0.0001
+  },
+  "all_numerical_checks_passed": true
+}

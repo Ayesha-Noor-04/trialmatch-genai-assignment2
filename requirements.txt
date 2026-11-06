@@ -9,3 +9,6 @@ numpy>=1.26
 matplotlib>=3.8
 huggingface_hub>=0.25
 pytest>=8.0
+
+streamlit>=1.40
+reportlab>=4.2

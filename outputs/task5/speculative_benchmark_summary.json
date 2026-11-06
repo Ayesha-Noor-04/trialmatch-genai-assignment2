@@ -1,0 +1,17 @@
+{
+  "target_model": "Qwen/Qwen2.5-1.5B-Instruct + LoRA",
+  "draft_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "draft_k": 4,
+  "max_new_tokens": 64,
+  "repeats": 2,
+  "all_token_agreement": true,
+  "mean_ordinary_latency_sec": 5.697951268166435,
+  "mean_speculative_latency_sec": 10.337819834666638,
+  "mean_speedup": 0.5526403889604744,
+  "mean_acceptance_rate": 0.3979767858118817,
+  "total_drafted_tokens": 298,
+  "total_accepted_tokens": 118,
+  "total_rejected_rounds": 61,
+  "mean_ordinary_peak_extra_gb": 0.01054843266805013,
+  "mean_speculative_peak_extra_gb": 0.023886680603027344
+}

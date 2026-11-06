@@ -1,0 +1,23 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "manifest": "data/split_manifest.json",
+  "out": "outputs/qwen15b_lora",
+  "max_len": 2048,
+  "epochs": 5,
+  "lr": 0.0002,
+  "batch_size": 2,
+  "grad_accum": 8,
+  "r": 16,
+  "alpha": 32,
+  "dropout": 0.05,
+  "warmup_ratio": 0.05,
+  "patience": 2,
+  "seed": 42,
+  "log_every": 5,
+  "dtype": "torch.bfloat16",
+  "trainable_params": 18464768,
+  "train_rows": 602,
+  "val_rows": 206,
+  "total_optimizer_steps": 190,
+  "torch": "2.11.0+cu130"
+}

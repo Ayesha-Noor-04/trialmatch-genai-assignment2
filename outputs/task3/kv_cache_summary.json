@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "adapter": "/content/trialmatch-genai-assignment2/outputs/qwen15b_lora/best_adapter",
+  "gpu": "Tesla T4",
+  "dtype": "torch.bfloat16",
+  "transformers": "5.22.1",
+  "torch": "2.14.1+cu130",
+  "all_token_agreements": true,
+  "number_of_comparisons": 6
+}

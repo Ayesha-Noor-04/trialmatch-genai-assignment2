@@ -1,0 +1,1089 @@
+[
+  {
+    "annotation_id": 161,
+    "criterion_type": "inclusion",
+    "criterion": "Patients undergoing elective carotid endarterectomy",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [
+      0,
+      1,
+      2
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning."
+      },
+      {
+        "sentence_id": 1,
+        "text": "She is now complaining of a cool right foot."
+      },
+      {
+        "sentence_id": 2,
+        "text": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered."
+      }
+    ],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [0] A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. [1] She is now complaining of a cool right foot. [2] Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+    "gold_category": "not included",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [0, 1, 2], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 162,
+    "criterion_type": "inclusion",
+    "criterion": "Patients undergoing open abdominal aortic aneurysm repair",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [
+      0,
+      1,
+      2
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning."
+      },
+      {
+        "sentence_id": 1,
+        "text": "She is now complaining of a cool right foot."
+      },
+      {
+        "sentence_id": 2,
+        "text": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered."
+      }
+    ],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [0] A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. [1] She is now complaining of a cool right foot. [2] Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+    "gold_category": "not included",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [0, 1, 2], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 163,
+    "criterion_type": "inclusion",
+    "criterion": "Patients undergoing endovascular abdominal aneurysm repair",
+    "predicted_category": "included",
+    "cited_sentence_ids": [
+      0,
+      1,
+      2
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning."
+      },
+      {
+        "sentence_id": 1,
+        "text": "She is now complaining of a cool right foot."
+      },
+      {
+        "sentence_id": 2,
+        "text": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered."
+      }
+    ],
+    "explanation": "The model predicted 'included' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [0] A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. [1] She is now complaining of a cool right foot. [2] Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+    "gold_category": "not included",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [0, 1, 2], \"label\": \"included\"}"
+  },
+  {
+    "annotation_id": 164,
+    "criterion_type": "inclusion",
+    "criterion": "Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal)",
+    "predicted_category": "included",
+    "cited_sentence_ids": [
+      0,
+      2
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning."
+      },
+      {
+        "sentence_id": 2,
+        "text": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered."
+      }
+    ],
+    "explanation": "The model predicted 'included' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [0] A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning. [2] Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+    "gold_category": "not included",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [0, 2], \"label\": \"included\"}"
+  },
+  {
+    "annotation_id": 165,
+    "criterion_type": "exclusion",
+    "criterion": "Pregnancy",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 169,
+    "criterion_type": "exclusion",
+    "criterion": "Patients with an estimated pre-operative glomerular filtration rate < 30mls/min/1.73m2",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 174,
+    "criterion_type": "exclusion",
+    "criterion": "Patients with previous axillary surgery",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 176,
+    "criterion_type": "inclusion",
+    "criterion": "No medical history of central vena catheterization.",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "included",
+    "gold_sentence_ids": [
+      0
+    ],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 177,
+    "criterion_type": "inclusion",
+    "criterion": "Maintenance hemodialysis after central vena catheterization.",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not included",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 185,
+    "criterion_type": "inclusion",
+    "criterion": "Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission."
+      },
+      {
+        "sentence_id": 1,
+        "text": "She denies trauma."
+      },
+      {
+        "sentence_id": 2,
+        "text": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic."
+      },
+      {
+        "sentence_id": 3,
+        "text": "Her body temperature is normal and her blood pressure is 80/60."
+      }
+    ],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [0] A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission. [1] She denies trauma. [2] On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic. [3] Her body temperature is normal and her blood pressure is 80/60.",
+    "gold_category": "included",
+    "gold_sentence_ids": [
+      2,
+      3
+    ],
+    "raw_model_output": "{\"evidence\": [0, 1, 2, 3], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 186,
+    "criterion_type": "inclusion",
+    "criterion": "Heart rate of at least 90/min;",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [
+      3
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 3,
+        "text": "Her body temperature is normal and her blood pressure is 80/60."
+      }
+    ],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [3] Her body temperature is normal and her blood pressure is 80/60.",
+    "gold_category": "included",
+    "gold_sentence_ids": [
+      2
+    ],
+    "raw_model_output": "{\"evidence\": [3], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 187,
+    "criterion_type": "inclusion",
+    "criterion": "A respiratory rate of at least 20/min or a PaCO2 of 32mmHg or lower or the use of mechanical ventilation;",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [
+      5
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 5,
+        "text": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+      }
+    ],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [5] The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+    "gold_category": "included",
+    "gold_sentence_ids": [
+      2
+    ],
+    "raw_model_output": "{\"evidence\": [5], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 188,
+    "criterion_type": "inclusion",
+    "criterion": "The use of vasopressors to maintain a systolic blood pressure of at least 90mmHg despite fluid resuscitation, low dose of dopamine (≤ 5 μg/kg per minute), or dobutamine;",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not included",
+    "gold_sentence_ids": [
+      3
+    ],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 193,
+    "criterion_type": "exclusion",
+    "criterion": "Patients were moribund.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 315,
+    "criterion_type": "exclusion",
+    "criterion": "BMI> 40 kg/m2.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 323,
+    "criterion_type": "inclusion",
+    "criterion": "Immune Deficiency and early BMF in childhood",
+    "predicted_category": "included",
+    "cited_sentence_ids": [
+      0
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40."
+      }
+    ],
+    "explanation": "The model predicted 'included' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [0] A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [
+      0
+    ],
+    "raw_model_output": "{\"evidence\": [0], \"label\": \"included\"}"
+  },
+  {
+    "annotation_id": 325,
+    "criterion_type": "inclusion",
+    "criterion": "Genetic patients",
+    "predicted_category": "included",
+    "cited_sentence_ids": [
+      0
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40."
+      }
+    ],
+    "explanation": "The model predicted 'included' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [0] A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [0], \"label\": \"included\"}"
+  },
+  {
+    "annotation_id": 385,
+    "criterion_type": "inclusion",
+    "criterion": "Ability to take and retain oral medication",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "included",
+    "gold_sentence_ids": [
+      4
+    ],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 389,
+    "criterion_type": "exclusion",
+    "criterion": "Severe renal impairment (estimated or measured GFR <50%)",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 390,
+    "criterion_type": "exclusion",
+    "criterion": "Oral treatment with corticosteroids (>15 mg/day prednisolone or equivalent) or changes in corticosteroid dosing within 30 days prior to the first dose of study medication. This also includes intraarticular steroid injections or topical treatment for SLE symptoms. Inhaled or topical steroids may be given for reasons other than SLE disease activity (such as asthma, contact dermatitis) as clinically indicated.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 391,
+    "criterion_type": "exclusion",
+    "criterion": "Intravenous corticosteroids within 3 months prior to the first dose of study medication.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 392,
+    "criterion_type": "exclusion",
+    "criterion": "Intravenous cyclophosphamide within 6 months prior to the first dose of study medication.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 393,
+    "criterion_type": "exclusion",
+    "criterion": "Treatment with anti-rheumatic/immunosuppressive drugs within 3 months prior to first dose of study medication, other than the following medications at stable doses: methotrexate (≤25 mg/week), azathioprine (≤2.5 mg/kg/day), hydroxychloroquine and mycophenolate mofetil (≤3000 mg/day).",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 394,
+    "criterion_type": "exclusion",
+    "criterion": "B-cell depletion therapy (such as treatment with Rituximab) within 12 months prior to the first dose of study medication.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 395,
+    "criterion_type": "exclusion",
+    "criterion": "Potent inhibitors or inducers of CYP3A4 intravenously or orally within 14 days prior to first dose of study medication.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 398,
+    "criterion_type": "exclusion",
+    "criterion": "History of additional risk factors for torsade de pointes (eg, heart failure, hypokalemia, family history of long QT syndrome)",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 399,
+    "criterion_type": "exclusion",
+    "criterion": "Treatment with concomitant medications that prolong the QT interval.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 403,
+    "criterion_type": "exclusion",
+    "criterion": "Positive result on screening for hepatitis B surface antigen, hepatitis C antibodies or human immunodeficiency virus (HIV) antibodies.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 404,
+    "criterion_type": "exclusion",
+    "criterion": "Drug abuse.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 405,
+    "criterion_type": "exclusion",
+    "criterion": "Major surgery within 3 weeks prior to study entry.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 406,
+    "criterion_type": "exclusion",
+    "criterion": "Known or suspected hypersensitivity to ABR-215757 or excipients.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 407,
+    "criterion_type": "exclusion",
+    "criterion": "Female subject of child-bearing potential who is not using a medically accepted safe method of contraception. All female subjects of child-bearing potential must have a negative urine pregnancy test at the Screening and Baseline Visits. As interaction studies between ABR-215757 and oral contraceptives have not yet been performed, women using the contraceptive pill must also use a complementary contraceptive device, i.e. barrier method, during the treatment period and for at least 1 month thereafter.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [
+      0
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A 21-year-old female is evaluated for progressive arthralgias and malaise."
+      }
+    ],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion. It cited the following sentences from the patient note as evidence: [0] A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [0], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 408,
+    "criterion_type": "exclusion",
+    "criterion": "Female subject of child-bearing potential who is pregnant or lactating.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 409,
+    "criterion_type": "exclusion",
+    "criterion": "Simultaneous participation or participation within 4 months or 5 half lives (whichever is longer) prior to study entry in any other study involving investigational drugs or other experimental therapy.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 410,
+    "criterion_type": "exclusion",
+    "criterion": "Other significant, unstable medical disease not related to SLE that in the investigator's opinion would confound the study result or put the patient at risk.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 411,
+    "criterion_type": "exclusion",
+    "criterion": "Patients likely to receive oral or intravenous steroids or immunosuppressant for other non-SLE condition during the study duration, as this will confound the study result.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 412,
+    "criterion_type": "exclusion",
+    "criterion": "Vaccination within 4 weeks prior to the first dose of study medication.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 418,
+    "criterion_type": "exclusion",
+    "criterion": "Failure to pass MRI metal screening",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 419,
+    "criterion_type": "exclusion",
+    "criterion": "Claustrophobia or need for sedation due to inability to hold still",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 422,
+    "criterion_type": "inclusion",
+    "criterion": "If female, using birth control",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [
+      3
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 3,
+        "text": "She has had no sexual partners and her menses are regular."
+      }
+    ],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [3] She has had no sexual partners and her menses are regular.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [
+      3
+    ],
+    "raw_model_output": "{\"evidence\": [3], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 678,
+    "criterion_type": "inclusion",
+    "criterion": "Diagnosis of mild sleep-disordered breathing (MSDB) defined as meeting all of the following criteria: Caregiver report of habitual snoring that occurs most of the night on at least three nights per week, and has been present for at least three months (on average occurring > 3 nights per week or more half of sleep time)",
+    "predicted_category": "included",
+    "cited_sentence_ids": [
+      0
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings."
+      }
+    ],
+    "explanation": "The model predicted 'included' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [0] A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [
+      0
+    ],
+    "raw_model_output": "{\"evidence\": [0], \"label\": \"included\"}"
+  },
+  {
+    "annotation_id": 683,
+    "criterion_type": "exclusion",
+    "criterion": "Previous tonsillectomy, including partial tonsillectomy",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 693,
+    "criterion_type": "exclusion",
+    "criterion": "Suspected diagnosis of a sleep disorder other than OSA (i.e., periodic leg movements, narcolepsy, insomnia, central sleep apnea, sleep hypoventilation syndrome)",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 697,
+    "criterion_type": "exclusion",
+    "criterion": "Pregnant",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 744,
+    "criterion_type": "inclusion",
+    "criterion": "patient speaks and understands Finnish or Swedish",
+    "predicted_category": "included",
+    "cited_sentence_ids": [
+      4
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 4,
+        "text": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+      }
+    ],
+    "explanation": "The model predicted 'included' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [4] The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [4], \"label\": \"included\"}"
+  },
+  {
+    "annotation_id": 745,
+    "criterion_type": "inclusion",
+    "criterion": "female patients have adequate birth-control method",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 750,
+    "criterion_type": "exclusion",
+    "criterion": "pregnancy",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 751,
+    "criterion_type": "exclusion",
+    "criterion": "breast-feeding",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 754,
+    "criterion_type": "exclusion",
+    "criterion": "alcoholism (drunk at least once a week)",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 756,
+    "criterion_type": "exclusion",
+    "criterion": "treatment of peritonsillar abscess requires in-patient care",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 758,
+    "criterion_type": "exclusion",
+    "criterion": "army recruit",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 762,
+    "criterion_type": "inclusion",
+    "criterion": "A sore and scratchy throat and/or pain on swallowing (odynophagia) together with at least 2 of the following clinical signs:",
+    "predicted_category": "included",
+    "cited_sentence_ids": [
+      0,
+      1,
+      2
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes."
+      },
+      {
+        "sentence_id": 1,
+        "text": "He is toxic-appearing, and leans forward while sitting on his mother's lap."
+      },
+      {
+        "sentence_id": 2,
+        "text": "He is drooling and speaks with a muffled \"hot potato\" voice."
+      }
+    ],
+    "explanation": "The model predicted 'included' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [0] A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes. [1] He is toxic-appearing, and leans forward while sitting on his mother's lap. [2] He is drooling and speaks with a muffled \"hot potato\" voice.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [
+      0
+    ],
+    "raw_model_output": "{\"evidence\": [0, 1, 2], \"label\": \"included\"}"
+  },
+  {
+    "annotation_id": 767,
+    "criterion_type": "exclusion",
+    "criterion": "Symptoms that collectively suggest nonstreptococcal T/P (eg, laryngitis, coryza, conjunctivitis, diarrhea, cough)",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [
+      0,
+      1,
+      2
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes."
+      },
+      {
+        "sentence_id": 1,
+        "text": "He is toxic-appearing, and leans forward while sitting on his mother's lap."
+      },
+      {
+        "sentence_id": 2,
+        "text": "He is drooling and speaks with a muffled \"hot potato\" voice."
+      }
+    ],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion. It cited the following sentences from the patient note as evidence: [0] A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes. [1] He is toxic-appearing, and leans forward while sitting on his mother's lap. [2] He is drooling and speaks with a muffled \"hot potato\" voice.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [
+      0
+    ],
+    "raw_model_output": "{\"evidence\": [0, 1, 2], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 771,
+    "criterion_type": "exclusion",
+    "criterion": "Females of childbearing potential (ie, have reached menarche)",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [
+      0
+    ],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 782,
+    "criterion_type": "exclusion",
+    "criterion": "Children of the investigator or subinvestigator, research assistant, pharmacist, study coordinator, other staff, or relative thereof directly involved in the conduct of the protocol",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 827,
+    "criterion_type": "inclusion",
+    "criterion": "Clinical diagnosis of bronchial asthma",
+    "predicted_category": "included",
+    "cited_sentence_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A 4 year old boy presents to the emergency room with wheezing."
+      },
+      {
+        "sentence_id": 1,
+        "text": "He has had a history of allergic rhinitis, but no history of wheezing."
+      },
+      {
+        "sentence_id": 2,
+        "text": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing."
+      },
+      {
+        "sentence_id": 3,
+        "text": "The coughing lasted only moments, but he has been audibly wheezing since."
+      },
+      {
+        "sentence_id": 4,
+        "text": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED."
+      }
+    ],
+    "explanation": "The model predicted 'included' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [0] A 4 year old boy presents to the emergency room with wheezing. [1] He has had a history of allergic rhinitis, but no history of wheezing. [2] His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing. [3] The coughing lasted only moments, but he has been audibly wheezing since. [4] Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [
+      0,
+      1,
+      2,
+      3,
+      6
+    ],
+    "raw_model_output": "{\"evidence\": [0, 1, 2, 3, 4], \"label\": \"included\"}"
+  },
+  {
+    "annotation_id": 831,
+    "criterion_type": "inclusion",
+    "criterion": "Oxygen saturation of > 94 % and normal blood pressure (Systolic between 150 - 90, Diastolic between 90-60 mm Hg)",
+    "predicted_category": "included",
+    "cited_sentence_ids": [
+      7
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 7,
+        "text": "O2 sats are 100% on room air."
+      }
+    ],
+    "explanation": "The model predicted 'included' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [7] O2 sats are 100% on room air.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [
+      7
+    ],
+    "raw_model_output": "{\"evidence\": [7], \"label\": \"included\"}"
+  },
+  {
+    "annotation_id": 832,
+    "criterion_type": "inclusion",
+    "criterion": "Symptom Score no greater than 6 (out of a possible 24) for total symptom score with a value no greater than 2 for any one score.",
+    "predicted_category": "included",
+    "cited_sentence_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 0,
+        "text": "A 4 year old boy presents to the emergency room with wheezing."
+      },
+      {
+        "sentence_id": 1,
+        "text": "He has had a history of allergic rhinitis, but no history of wheezing."
+      },
+      {
+        "sentence_id": 2,
+        "text": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing."
+      },
+      {
+        "sentence_id": 3,
+        "text": "The coughing lasted only moments, but he has been audibly wheezing since."
+      },
+      {
+        "sentence_id": 4,
+        "text": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED."
+      },
+      {
+        "sentence_id": 6,
+        "text": "Wheezing is heard in the mid-right chest area."
+      }
+    ],
+    "explanation": "The model predicted 'included' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [0] A 4 year old boy presents to the emergency room with wheezing. [1] He has had a history of allergic rhinitis, but no history of wheezing. [2] His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing. [3] The coughing lasted only moments, but he has been audibly wheezing since. [4] Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED. [6] Wheezing is heard in the mid-right chest area.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [0, 1, 2, 3, 4, 6], \"label\": \"included\"}"
+  },
+  {
+    "annotation_id": 834,
+    "criterion_type": "inclusion",
+    "criterion": "--Negative pregnancy test for females",
+    "predicted_category": "not enough information",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not enough information' for this inclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not enough information\"}"
+  },
+  {
+    "annotation_id": 836,
+    "criterion_type": "inclusion",
+    "criterion": "History of episodic wheezing, chest tightness, or shortness of breath after age of 6 years consistent with asthma, or physician diagnosed asthma after age of 6 years.",
+    "predicted_category": "included",
+    "cited_sentence_ids": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 1,
+        "text": "He has had a history of allergic rhinitis, but no history of wheezing."
+      },
+      {
+        "sentence_id": 2,
+        "text": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing."
+      },
+      {
+        "sentence_id": 3,
+        "text": "The coughing lasted only moments, but he has been audibly wheezing since."
+      },
+      {
+        "sentence_id": 4,
+        "text": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED."
+      }
+    ],
+    "explanation": "The model predicted 'included' for this inclusion criterion. It cited the following sentences from the patient note as evidence: [1] He has had a history of allergic rhinitis, but no history of wheezing. [2] His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing. [3] The coughing lasted only moments, but he has been audibly wheezing since. [4] Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+    "gold_category": "not included",
+    "gold_sentence_ids": [
+      0,
+      1
+    ],
+    "raw_model_output": "{\"evidence\": [1, 2, 3, 4], \"label\": \"included\"}"
+  },
+  {
+    "annotation_id": 847,
+    "criterion_type": "exclusion",
+    "criterion": "Pregnancy or nursing a baby.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 848,
+    "criterion_type": "exclusion",
+    "criterion": "Cigarette smoking > 1 pack per month.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [],
+    "evidence_text": [],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion, but did not cite supporting sentences. Missing cited evidence alone does not establish eligibility or ineligibility.",
+    "gold_category": "not applicable",
+    "gold_sentence_ids": [],
+    "raw_model_output": "{\"evidence\": [], \"label\": \"not excluded\"}"
+  },
+  {
+    "annotation_id": 849,
+    "criterion_type": "exclusion",
+    "criterion": "Nighttime symptoms of cough or wheeze greater than 1x/week at baseline (not during a clearly recognized viral induced asthma exacerbation) which would be characteristic of a person of moderate or severe persistent asthma as outlined in the current NHLBI guidelines for diagnosis and management of asthma.",
+    "predicted_category": "not excluded",
+    "cited_sentence_ids": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "evidence_text": [
+      {
+        "sentence_id": 1,
+        "text": "He has had a history of allergic rhinitis, but no history of wheezing."
+      },
+      {
+        "sentence_id": 2,
+        "text": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing."
+      },
+      {
+        "sentence_id": 3,
+        "text": "The coughing lasted only moments, but he has been audibly wheezing since."
+      },
+      {
+        "sentence_id": 4,
+        "text": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED."
+      }
+    ],
+    "explanation": "The model predicted 'not excluded' for this exclusion criterion. It cited the following sentences from the patient note as evidence: [1] He has had a history of allergic rhinitis, but no history of wheezing. [2] His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing. [3] The coughing lasted only moments, but he has been audibly wheezing since. [4] Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+    "gold_category": "not enough information",
+    "gold_sentence_ids": [
+      0,
+      3,
+      6
+    ],
+    "raw_model_output": "{\"evidence\": [1, 2, 3, 4], \"label\": \"not excluded\"}"
+  }
+]

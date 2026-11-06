@@ -1,0 +1,28 @@
+{
+  "model_tokenizer": "Qwen/Qwen2.5-1.5B-Instruct",
+  "max_len": 2048,
+  "splits": {
+    "train": {
+      "rows": 602,
+      "patients": 37,
+      "tokens_mean": 348.3837209302326,
+      "tokens_p95": 519.9499999999999,
+      "tokens_max": 639,
+      "rows_over_max_len": 0,
+      "rows_with_evidence_id_out_of_range": 0,
+      "mean_sentences_per_note": 6.096345514950166,
+      "rows_with_empty_gold_evidence": 348
+    },
+    "val": {
+      "rows": 206,
+      "patients": 8,
+      "tokens_mean": 362.27669902912623,
+      "tokens_p95": 413.5,
+      "tokens_max": 474,
+      "rows_over_max_len": 0,
+      "rows_with_evidence_id_out_of_range": 0,
+      "mean_sentences_per_note": 7.063106796116505,
+      "rows_with_empty_gold_evidence": 116
+    }
+  }
+}
